@@ -101,3 +101,7 @@ flutter pub add provider
 
 | [<img src="https://avatars.githubusercontent.com/u/69699209?v=4" width=115><br><sub>Gabriel Tavares</sub>](https://github.com/gbtb16) | 
 | :---: |
+
+## ⚖ Licença
+
+O projeto SasaBank é protegido pela [Apache License 2.0](./LICENSE).
