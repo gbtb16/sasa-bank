@@ -2,7 +2,7 @@
   <img src="https://github.com/gbtb16/sasa-bank/blob/main/assets/app/v2/imgs/sasa_letters.png"/>
 </p>
 
-<h2 align="center"> Já pensou em um banco livre de burocracia, e totalmente seu?</h2>
+<h2 align="center"> Já pensou em um banco livre de burocracia, e totalmente seu? 🎆</h2>
 <h3> Apresentamos <i>SasaBank</i>, uma instituição financeira digital inteiramente sua. Venha fazer parte e explore as vantagens de nosso mercado! </h3>
 </br>
 <p align="center"><b>Quer ajudar a fazer parte deste lindo projeto? Contribue!</b></p>
