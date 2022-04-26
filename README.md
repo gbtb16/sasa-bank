@@ -88,7 +88,8 @@ flutter pub add provider
 * `` lib(/) `` - Pasta raiz do projeto em _Flutter_.
 * `` /areas `` - Áreas que podem ser reutilizadas se baseando na responsividade.
 * `` /components `` - Pequenos widgets que podem ser reutilizados durante o projeto.
-* `` /functions && /functions/global `` - Todas as funções que podem ser exportadas, no projeto.
+* `` /functions `` - Pasta de funções.
+* `` /functions/global `` - Funções globais exportadas que podem ser acessadas de qualquer lugar.
 * `` /managements `` - Gerenciamento de estados de widgets e controle de widgets em conjunto.
 * `` /managements/cards `` - Gerenciamento de estados dos _Cards_ que aparecem na HomeScreen.
 * `` /menus `` - Menus que poderão ser utilizados no restante da aplicação.
