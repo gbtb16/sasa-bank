@@ -96,3 +96,8 @@ flutter pub add provider
 * `` /routes `` - Controle de rotas.
 * `` /screens `` - Telas separadas em arquivos para controle e responsividade.
 * `` /widgets `` - Widgets complexos que podem ser reutilizados, mas que geralmente se mantém em apenas um estado, durante toda aplicação. 
+
+## 😎 Autor
+
+| [<img src="https://avatars.githubusercontent.com/u/69699209?v=4" width=115><br><sub>Gabriel Tavares</sub>](https://github.com/gbtb16) | 
+| :---: |
