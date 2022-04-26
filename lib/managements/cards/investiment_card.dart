@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:sasa_bank/components/colored_button_row_component.dart';
 import 'package:sasa_bank/widgets/custom_card_widget.dart';
-import 'package:sasa_bank/widgets/small_widgets/colored_button_row_widget.dart';
 
 class InvestimentCard extends StatefulWidget {
   const InvestimentCard({Key? key}) : super(key: key);
@@ -22,7 +22,7 @@ class _InvestimentCardState extends State<InvestimentCard> {
       hasArrowFoward: true,
       hasBottomLine: true,
       externalChild: Column(children: [
-        ColoredButtonRowWidget(
+        ColoredButtonRowComponent(
             onPressed: () {},
             iconName: Icons.money,
             title: 'Consultar saldo para transferência'),

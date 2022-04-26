@@ -4,13 +4,14 @@
 
 <p>Quer ajudar a fazer parte deste lindo projeto? Contribue!</p>
 
-<p>****** CLONE: ******</p>
+<h3>Clonar projeto:</h3>
 <p>Para clonar o projeto em seu computador, utilize:</p>
 ```
 git clone https://github.com/gbtb16/sasa-bank.git
 ```
+<br>
 
-<p>****** DEPENDÊNCIAS DO PROJETO: ******</p>
+<h3>Dependências: <h3>
 <p>Baixe as atuais dependências do projeto, para estar por dentro de todas novidades que utilizamos!</p>
 <p>Você pode utilizar-se da maneira automática do próprio Flutter:</p>
 ```
@@ -39,7 +40,7 @@ flutter pub add url_launcher
 flutter pub add page_transition
 ```
 <br>
-<li>Shared Preferences - O querido package para gerenciamento de dados interno do dispositivo!<li>
+<li>Shared Preferences - O querido package de gerenciamento de dados internos!<li>
 ```
 flutter pub add shared_preferences
 ```

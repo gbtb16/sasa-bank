@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:sasa_bank/widgets/small_widgets/interactive_colored_row_widget.dart';
+
+import 'package:sasa_bank/components/colored_button_row_component.dart';
+import 'package:sasa_bank/components/interactive_colored_row_component.dart';
 
 import 'package:sasa_bank/managements/label_floating_button_management.dart';
-import 'package:sasa_bank/widgets/small_widgets/colored_button_row_widget.dart';
 import 'package:sasa_bank/widgets/custom_card_widget.dart';
 import 'package:sasa_bank/options/default_options.dart';
 
@@ -49,7 +50,7 @@ class _AccountCardState extends State<AccountCard> {
             ),
           ),
           const SizedBox(height: 20),
-          ColoredButtonRowWidget(
+          ColoredButtonRowComponent(
             onPressed: () {},
             iconName: Icons.credit_card,
             title: 'Meus cartões',
@@ -63,12 +64,12 @@ class _AccountCardState extends State<AccountCard> {
               child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: const [
-                    InteractiveColoredRowWidget(
+                    InteractiveColoredRowComponent(
                       text: 'Conheça ',
                       boldText: 'SasaBank Vida:\n',
                       moreText: 'um seguro simples e que cabe no seu bolso.',
                     ),
-                    InteractiveColoredRowWidget(
+                    InteractiveColoredRowComponent(
                         text: 'Salve seus amigos da\nburocracia. ',
                         boldText:
                             'Faça um convite através de nosso app para local de sua escolha.'),

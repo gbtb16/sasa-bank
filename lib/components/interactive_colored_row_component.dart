@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 
 import 'package:sasa_bank/options/default_options.dart';
 
-class InteractiveColoredRowWidget extends StatelessWidget {
+class InteractiveColoredRowComponent extends StatelessWidget {
   final String text;
   final String? boldText;
   final String? moreText;
   final Color? backgroundColor;
 
-  const InteractiveColoredRowWidget({
+  const InteractiveColoredRowComponent({
     Key? key,
     required this.text,
     this.boldText,

@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 import 'package:sasa_bank/options/default_options.dart';
 
-class RectangleWidget extends StatelessWidget {
+class RectangleComponent extends StatelessWidget {
   final IconData iconName;
   final String title;
   final String subtitle;
   final String buttonText;
   final Function onPressed;
 
-  const RectangleWidget(
+  const RectangleComponent(
       {Key? key,
       required this.iconName,
       required this.title,

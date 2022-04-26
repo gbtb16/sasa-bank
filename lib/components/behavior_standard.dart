@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class BehaviorStandardWidget extends ScrollBehavior {
+class BehaviorStandard extends ScrollBehavior {
   @override
   Widget buildOverscrollIndicator(
       BuildContext context, Widget? child, ScrollableDetails details) {

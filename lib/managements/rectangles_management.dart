@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'package:sasa_bank/components/rectangle_component.dart';
 import 'package:sasa_bank/functions/global/launch_whatsapp_function.dart';
 
-import 'package:sasa_bank/widgets/small_widgets/rectangle_widget.dart';
+// mudança futura: tornar-se um listview de criação automática
 
 class RectanglesManagement extends StatefulWidget {
   const RectanglesManagement({Key? key}) : super(key: key);
@@ -17,14 +18,14 @@ class _RectanglesManagementState extends State<RectanglesManagement> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        RectangleWidget(
+        RectangleComponent(
             iconName: Icons.money,
             onPressed: () {},
             title: 'Portabilidade de salário',
             subtitle:
                 'Sua liberdade financeira começa com você escolhendo seu futuro.',
             buttonText: 'Conhecer'),
-        RectangleWidget(
+        RectangleComponent(
             iconName: Icons.people,
             onPressed: () {
               launchWhatsApp();
@@ -33,7 +34,7 @@ class _RectanglesManagementState extends State<RectanglesManagement> {
             subtitle:
                 'Mostre aos seus amigos como é fácil ter uma vida sem burocracia.',
             buttonText: 'Indicar amigos'),
-        RectangleWidget(
+        RectangleComponent(
             iconName: Icons.whatsapp,
             onPressed: () {},
             title: 'WhatsApp',

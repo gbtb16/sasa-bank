@@ -3,6 +3,8 @@ import 'package:sasa_bank/functions/global/launch_whatsapp_function.dart';
 
 import 'package:sasa_bank/widgets/label_floating_button_widget.dart';
 
+// mudança futura: tornar-se um listview de criação automática
+
 class LabelFloatingButtonManagement extends StatefulWidget {
   const LabelFloatingButtonManagement({Key? key}) : super(key: key);
 

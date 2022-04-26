@@ -40,7 +40,7 @@ class _CreditCardState extends State<CreditCard> {
               style: TextStyle(
                 color: defaultColorOptions.textColor,
                 fontSize: 25,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w500,
               ),
             )
           ],
@@ -53,7 +53,7 @@ class _CreditCardState extends State<CreditCard> {
               style: TextStyle(
                 color: defaultColorOptions.secondTextColor,
                 fontSize: 12,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w500,
               ),
             ),
           ],
@@ -65,7 +65,7 @@ class _CreditCardState extends State<CreditCard> {
               style: TextStyle(
                 color: defaultColorOptions.secondTextColor,
                 fontSize: 12,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w500,
               ),
             ),
             Text(
@@ -73,7 +73,7 @@ class _CreditCardState extends State<CreditCard> {
               style: TextStyle(
                 color: defaultColorOptions.enabledTextColor,
                 fontSize: 12,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w500,
               ),
             )
           ],
@@ -86,7 +86,7 @@ class _CreditCardState extends State<CreditCard> {
               child: Text('Parcelar Compras',
                   style: TextStyle(
                     color: defaultColorOptions.iconColor,
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.w500,
                   )),
               style: ElevatedButton.styleFrom(
                 primary: defaultColorOptions.primaryColor,

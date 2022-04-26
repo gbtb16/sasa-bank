@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 import 'package:sasa_bank/options/default_options.dart';
 
-class ColoredButtonRowWidget extends StatefulWidget {
+class ColoredButtonRowComponent extends StatefulWidget {
   final IconData? iconName;
   final String title;
   final String? secondTitle;
   final Color? backgroundColor;
   final Function onPressed;
 
-  const ColoredButtonRowWidget(
+  const ColoredButtonRowComponent(
       {Key? key,
       this.iconName,
       required this.title,
@@ -19,10 +19,11 @@ class ColoredButtonRowWidget extends StatefulWidget {
       : super(key: key);
 
   @override
-  State<ColoredButtonRowWidget> createState() => _ColoredButtonRowWidgetState();
+  State<ColoredButtonRowComponent> createState() =>
+      _ColoredButtonRowComponentState();
 }
 
-class _ColoredButtonRowWidgetState extends State<ColoredButtonRowWidget> {
+class _ColoredButtonRowComponentState extends State<ColoredButtonRowComponent> {
   @override
   Widget build(BuildContext context) {
     final _iconName = widget.iconName;
