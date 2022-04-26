@@ -88,7 +88,7 @@ class CustomCardWidget extends StatelessWidget {
                           style: TextStyle(
                             color: defaultColorOptions.textColor,
                             fontSize: 20,
-                            fontWeight: FontWeight.bold,
+                            fontWeight: FontWeight.w500,
                           ),
                         ),
                         hasArrowFoward
@@ -110,7 +110,7 @@ class CustomCardWidget extends StatelessWidget {
                                     fontFamily: 'Poppins',
                                     color: defaultColorOptions.secondTextColor,
                                     fontSize: 12,
-                                    fontWeight: FontWeight.bold)))
+                                    fontWeight: FontWeight.w500)))
                         : const SizedBox(height: 0),
                     _hasSubtitle
                         ? const SizedBox(height: 15)

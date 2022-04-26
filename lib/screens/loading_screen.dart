@@ -6,6 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:sasa_bank/areas/colored_safe_area.dart';
 import 'package:sasa_bank/screens/home_screen.dart';
 import 'package:sasa_bank/options/default_options.dart';
+import 'package:page_transition/page_transition.dart';
 
 class LoadingScreen extends StatefulWidget {
   const LoadingScreen({
@@ -37,7 +38,9 @@ class _LoadingScreenState extends State<LoadingScreen> {
 
   route() {
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => const HomeScreen()));
+        context,
+        PageTransition(
+            type: PageTransitionType.fade, child: const HomeScreen()));
   }
 
   initScreen(BuildContext context) {

@@ -52,7 +52,7 @@ class LabelFloatingButtonWidget extends StatelessWidget {
               style: TextStyle(
                 color: defaultColorOptions.textColor,
                 fontSize: 13,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w500,
               ),
               textAlign: TextAlign.center,
               maxLines: 2,

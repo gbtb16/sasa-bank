@@ -27,7 +27,7 @@ class _CreditCardState extends State<CreditCard> {
               style: TextStyle(
                 color: defaultColorOptions.secondTextColor,
                 fontSize: 15,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w500,
               ),
             ),
           ],

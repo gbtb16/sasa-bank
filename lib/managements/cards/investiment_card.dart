@@ -21,10 +21,12 @@ class _InvestimentCardState extends State<InvestimentCard> {
           'O jeito Sasa de investir: sem asteríscos, linguagem, fácil e a partir de R\$1. Saiba Mais.',
       hasArrowFoward: true,
       hasBottomLine: true,
-      externalChild: Column(children: const [
+      externalChild: Column(children: [
         ColoredButtonRowWidget(
-            iconName: Icons.money, title: 'Consultar saldo para transferência'),
-        SizedBox(height: 15),
+            onPressed: () {},
+            iconName: Icons.money,
+            title: 'Consultar saldo para transferência'),
+        const SizedBox(height: 15),
       ]),
     );
   }

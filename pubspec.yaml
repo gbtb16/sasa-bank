@@ -14,7 +14,9 @@ dependencies:
   flutter_launcher_icons: ^0.9.2
   flutter_native_splash: ^2.1.5
   url_launcher: ^6.0.20
-  whatsapp_unilink: ^2.0.1+1
+  page_transition: ^2.0.5
+  shared_preferences: ^2.0.13
+  provider: ^6.0.2
 
 flutter_native_splash:
   color: "#930c90"
@@ -43,5 +45,5 @@ flutter:
     - family: Poppins
       fonts:
         - asset: assets/app/fonts/Poppins-Regular.ttf
-        - asset: assets/app/fonts/Poppins-Bold.ttf
-          weight: 700
+        - asset: assets/app/fonts/Poppins-Medium.ttf
+          weight: 500

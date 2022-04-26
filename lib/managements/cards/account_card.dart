@@ -30,7 +30,7 @@ class _AccountCardState extends State<AccountCard> {
                 style: TextStyle(
                   color: defaultColorOptions.textColor,
                   fontSize: 25,
-                  fontWeight: FontWeight.bold,
+                  fontWeight: FontWeight.w500,
                 ),
               )
             ],
@@ -49,7 +49,8 @@ class _AccountCardState extends State<AccountCard> {
             ),
           ),
           const SizedBox(height: 20),
-          const ColoredButtonRowWidget(
+          ColoredButtonRowWidget(
+            onPressed: () {},
             iconName: Icons.credit_card,
             title: 'Meus cartões',
           ),

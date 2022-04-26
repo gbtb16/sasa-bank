@@ -56,7 +56,7 @@ class RectangleWidget extends StatelessWidget {
                     children: [
                       Text(title,
                           style: TextStyle(
-                              fontWeight: FontWeight.bold,
+                              fontWeight: FontWeight.w500,
                               color: defaultColorOptions.iconColor)),
                       const SizedBox(height: 10),
                       SizedBox(
@@ -80,7 +80,7 @@ class RectangleWidget extends StatelessWidget {
                           child: Text(buttonText,
                               style: TextStyle(
                                   color: defaultColorOptions.textColor,
-                                  fontWeight: FontWeight.bold)))
+                                  fontWeight: FontWeight.w500)))
                     ]),
               )),
         ],

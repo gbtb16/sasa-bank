@@ -22,10 +22,9 @@ class _MyHomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
         statusBarColor: Colors.transparent,
         systemNavigationBarColor: Colors.white,
-        systemNavigationBarDividerColor: Colors.grey[200],
         systemNavigationBarIconBrightness: Brightness.dark));
 
     return ColoredSafeArea(

@@ -4,9 +4,14 @@ import 'package:sasa_bank/screens/loading_screen.dart';
 import 'package:sasa_bank/widgets/small_widgets/behavior_standard_widget.dart';
 import 'package:sasa_bank/options/default_options.dart';
 
-class GlobalRoute extends StatelessWidget {
+class GlobalRoute extends StatefulWidget {
   const GlobalRoute({Key? key}) : super(key: key);
 
+  @override
+  State<GlobalRoute> createState() => _GlobalRouteState();
+}
+
+class _GlobalRouteState extends State<GlobalRoute> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

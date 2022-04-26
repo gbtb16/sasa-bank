@@ -67,7 +67,7 @@ class _TopMenuState extends State<TopMenu> {
                   style: TextStyle(
                     color: defaultColorOptions.iconColor,
                     fontSize: 20,
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.w500,
                   ),
                 )
               ],

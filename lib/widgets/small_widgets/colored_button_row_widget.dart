@@ -2,32 +2,45 @@ import 'package:flutter/material.dart';
 
 import 'package:sasa_bank/options/default_options.dart';
 
-class ColoredButtonRowWidget extends StatelessWidget {
+class ColoredButtonRowWidget extends StatefulWidget {
   final IconData? iconName;
   final String title;
   final String? secondTitle;
   final Color? backgroundColor;
+  final Function onPressed;
 
-  const ColoredButtonRowWidget({
-    Key? key,
-    this.iconName,
-    required this.title,
-    this.secondTitle,
-    this.backgroundColor,
-  }) : super(key: key);
+  const ColoredButtonRowWidget(
+      {Key? key,
+      this.iconName,
+      required this.title,
+      this.secondTitle,
+      this.backgroundColor,
+      required this.onPressed})
+      : super(key: key);
 
   @override
+  State<ColoredButtonRowWidget> createState() => _ColoredButtonRowWidgetState();
+}
+
+class _ColoredButtonRowWidgetState extends State<ColoredButtonRowWidget> {
+  @override
   Widget build(BuildContext context) {
+    final _iconName = widget.iconName;
+    final _title = widget.title;
+    final _secondTitle = widget.secondTitle;
+    final _backgroundColor = widget.backgroundColor;
+    final _onPressed = widget.onPressed;
+
     final bool _hasIcon;
     final bool _hasSecondTitle;
 
-    if (iconName == null) {
+    if (_iconName == null) {
       _hasIcon = false;
     } else {
       _hasIcon = true;
     }
 
-    if (secondTitle == null) {
+    if (_secondTitle == null) {
       _hasSecondTitle = false;
     } else {
       _hasSecondTitle = true;
@@ -36,9 +49,11 @@ class ColoredButtonRowWidget extends StatelessWidget {
     return Padding(
         padding: const EdgeInsets.only(left: 20, right: 20),
         child: ElevatedButton(
-          onPressed: () {},
+          onPressed: () {
+            _onPressed();
+          },
           child: Row(children: [
-            _hasIcon ? Icon(iconName, color: Colors.white) : Container(),
+            _hasIcon ? Icon(_iconName, color: Colors.white) : Container(),
             _hasIcon
                 ? const Padding(padding: EdgeInsets.only(left: 15))
                 : Container(),
@@ -46,18 +61,18 @@ class ColoredButtonRowWidget extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(title,
+                  Text(_title,
                       style: TextStyle(
                         color: defaultColorOptions.iconColor,
                         fontSize: 13,
-                        fontWeight: FontWeight.bold,
+                        fontWeight: FontWeight.w500,
                       )),
                   _hasSecondTitle
-                      ? Text(secondTitle!,
+                      ? Text(_secondTitle!,
                           style: TextStyle(
                             color: defaultColorOptions.iconColor,
                             fontSize: 13,
-                            fontWeight: FontWeight.bold,
+                            fontWeight: FontWeight.w500,
                           ))
                       : const SizedBox(height: 0),
                 ],
@@ -69,13 +84,13 @@ class ColoredButtonRowWidget extends StatelessWidget {
                 RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15))),
             backgroundColor: MaterialStateProperty.all<Color?>(
-                backgroundColor ?? defaultColorOptions.primaryColor),
+                _backgroundColor ?? defaultColorOptions.primaryColor),
             elevation: MaterialStateProperty.all<double?>(0),
             padding: MaterialStateProperty.all<EdgeInsets?>(
                 const EdgeInsets.only(
                     top: 15, left: 20, right: 20, bottom: 15)),
             foregroundColor: MaterialStateProperty.all<Color?>(
-                backgroundColor ?? defaultColorOptions.primaryColor),
+                _backgroundColor ?? defaultColorOptions.primaryColor),
           ),
         ));
   }

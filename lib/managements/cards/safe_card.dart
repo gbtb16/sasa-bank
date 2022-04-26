@@ -20,13 +20,14 @@ class _SafeCardState extends State<SafeCard> {
       subtitle: 'Proteção para você cuidar do que importa',
       hasArrowFoward: false,
       hasBottomLine: true,
-      externalChild: Column(children: const [
+      externalChild: Column(children: [
         ColoredButtonRowWidget(
+          onPressed: () {},
           iconName: Icons.favorite_border,
           title: 'Seguro vida',
           secondTitle: 'Conhecer',
         ),
-        SizedBox(height: 15)
+        const SizedBox(height: 15)
       ]),
     );
   }

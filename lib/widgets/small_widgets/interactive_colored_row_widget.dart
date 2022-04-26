@@ -42,7 +42,7 @@ class InteractiveColoredRowWidget extends StatelessWidget {
                               text: boldText ?? '',
                               style: const TextStyle(
                                   fontFamily: 'Poppins',
-                                  fontWeight: FontWeight.bold)),
+                                  fontWeight: FontWeight.w500)),
                           TextSpan(text: moreText ?? '')
                         ])),
               ),
