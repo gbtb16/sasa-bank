@@ -7,6 +7,8 @@
 </br>
 <p align="center"><b>Quer ajudar a fazer parte deste lindo projeto? Contribue!</b></p>
 
+<p align="center"> :construction: <b>Projeto em construção</b> :construction: </p>
+
 <p align="center">
   <img src="https://img.shields.io/github/issues/gbtb16/sasa-bank"/>
   <img src="https://img.shields.io/github/forks/gbtb16/sasa-bank"/>
@@ -14,20 +16,29 @@
   <img src="https://img.shields.io/github/license/gbtb16/sasa-bank"/>
 </p>
 
-## Clonar projeto:
-Para clonar o projeto em seu computador, utilize:
+
+## :hammer: Tecnologias utilizadas:
+Utilizamos os melhores frameworks do mercado!
+* `` Dart ``
+* `` Flutter ``
+* `` POO ``
+
+## 📁 Clonar projeto:
+Para clonar o projeto, escolha um diretório em seu computador para gerenciar o projeto. 
+</br>
+Logo após escolher e estar no diretório, digite no GIT BASH:
 
 ```
 git clone https://github.com/gbtb16/sasa-bank.git
 ```
 
-## Abrir o Projeto:
+## 🛠️ Abrir o Projeto:
 Você pode utilizar a IDE que mais lhe facilitar. Aqui utilizamos o VS Code. Mas também há possibilidades como o Android Studio.
 
 * Assim que escolher, abra o projeto. 
 * Rode os comandos abaixo para se manter atualizado.
 
-## Dependências:
+## ♟ Dependências:
 Baixe as atuais dependências do projeto.
 Você pode utilizar a maneira mais fácil e prática, do próprio Flutter:
 
@@ -37,13 +48,13 @@ flutter pub get
 
 ### Caso queira instalá-las sozinhas, utilize:
 
-* Flutter Launcher Icons - Gerenciamento automático de tamanhos dos ícones!
+* Flutter Launcher Icons - Gerenciamento automático de tamanhos dos ícones.
 
 ```
 flutter pub add flutter_launcher_icons
 ```
 
-* Flutter Native Splash - Gerenciamento automático da Splash Screen!
+* Flutter Native Splash - Gerenciamento automático da Splash Screen.
 
 ```
 flutter pub add flutter_native_splash
@@ -72,3 +83,16 @@ flutter pub add shared_preferences
 ```
 flutter pub add provider
 ```
+
+## 🌠 Disposição de pastas do projeto:
+* `` lib(/) `` - Pasta raiz do projeto em _Flutter_.
+* `` /areas `` - Áreas que podem ser reutilizadas se baseando na responsividade.
+* `` /components `` - Pequenos widgets que podem ser reutilizados durante o projeto.
+* `` /functions && /functions/global `` - Todas as funções que podem ser exportadas, no projeto.
+* `` /managements `` - Gerenciamento de estados de widgets e controle de widgets em conjunto.
+* `` /managements/cards `` - Gerenciamento de estados dos _Cards_ que aparecem na HomeScreen.
+* `` /menus `` - Menus que poderão ser utilizados no restante da aplicação.
+* `` /options `` - Opções gerais do projeto.
+* `` /routes `` - Controle de rotas.
+* `` /screens `` - Telas separadas em arquivos para controle e responsividade.
+* `` /widgets `` - Widgets complexos que podem ser reutilizados, mas que geralmente se mantém em apenas um estado, durante toda aplicação. 
