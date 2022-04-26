@@ -3,9 +3,9 @@
 </p>
 
 <h2 align="center"> Já pensou em um banco livre de burocracia, e totalmente seu? 🎆</h2>
-<h3> Apresentamos <i>SasaBank</i>, uma instituição financeira digital inteiramente sua. Venha fazer parte e explore as vantagens de nosso mercado! </h3>
+<h3> Apresentamos <i>SasaBank</i>, uma instituição financeira digital inteiramente sua. Venha fazer parte e explore as nossas vantagens! </h3>
 </br>
-<p align="center"><b>Quer ajudar a fazer parte deste lindo projeto? Contribue!</b></p>
+<p align="center"><b>Quer ajudar a fazer parte deste lindo projeto? Contribua!</b></p>
 
 <p align="center"> :construction: <b>Projeto em construção</b> :construction: </p>
 
@@ -24,16 +24,16 @@ Utilizamos os melhores frameworks do mercado!
 * `` POO ``
 
 ## 📁 Clonar projeto:
-Para clonar o projeto, escolha um diretório em seu computador para gerenciar o projeto. 
+Para clonar o projeto, escolha um diretório em seu computador para gerenciá-lo. 
 </br>
-Logo após escolher e estar no diretório, digite no GIT BASH:
+Logo após escolher, e estar no diretório, digite no GIT BASH:
 
 ```
 git clone https://github.com/gbtb16/sasa-bank.git
 ```
 
 ## 🛠️ Abrir o Projeto:
-Você pode utilizar a IDE que mais lhe facilitar. Aqui utilizamos o VS Code. Mas também há possibilidades como o Android Studio.
+Você pode utilizar a IDE que mais lhe facilitar. Aqui utilizamos o VS Code. Mas também há o Android Studio.
 
 * Assim que escolher, abra o projeto. 
 * Rode os comandos abaixo para se manter atualizado.
@@ -95,7 +95,7 @@ flutter pub add provider
 * `` /menus `` - Menus que poderão ser utilizados no restante da aplicação.
 * `` /options `` - Opções gerais do projeto.
 * `` /routes `` - Controle de rotas.
-* `` /screens `` - Telas separadas em arquivos para controle e responsividade.
+* `` /screens `` - Telas separadas em arquivos, para controle e responsividade.
 * `` /widgets `` - Widgets complexos que podem ser reutilizados, mas que geralmente se mantém em apenas um estado, durante toda aplicação. 
 
 ## 😎 Autor
