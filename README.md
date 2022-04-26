@@ -1,23 +1,25 @@
-<h1 align="center">SasaBank</h1>
-<h2>Já pensou em um banco livre de burocracia e totalmente seu?</h2>
-<h3>Apresentamos <i>SasaBank</i>, uma instituição financeira digital inteiramente sua. Venha fazer parte e explore as vantagens de nosso mercado!</h3>
+<h1 align="center">#SasaBank</h1>
+
+## Já pensou em um banco livre de burocracia e totalmente seu?
+## Apresentamos <i>SasaBank</i>, uma instituição financeira digital inteiramente sua. Venha fazer parte e explore as vantagens de nosso mercado!<
 
 <p>Quer ajudar a fazer parte deste lindo projeto? Contribue!</p>
 
-<p>****** CLONE: ******</p>
+<h3>Clonar projeto:</h3>
 <p>Para clonar o projeto em seu computador, utilize:</p>
 ```
 git clone https://github.com/gbtb16/sasa-bank.git
 ```
+<br>
 
-<p>****** DEPENDÊNCIAS DO PROJETO: ******</p>
-<p>Baixe as atuais dependências do projeto, para estar por dentro de todas novidades que utilizamos!</p>
-<p>Você pode utilizar-se da maneira automática do próprio Flutter:</p>
+<h3>Dependências: <h3>
+> Baixe as atuais dependências do projeto, para estar por dentro de todas novidades que utilizamos!
+> <p>Você pode utilizar-se da maneira automática do próprio Flutter:</p>
 ```
 flutter pub get
 ```
 <br>
-<p>Ou baixar cada uma por partes:</p>
+> <p>Ou baixar cada uma por partes:</p>
 <ul>
 <li>Flutter Launcher Icons - Gerenciamento automático de tamanhos dos ícones!</li>
 ```
@@ -39,7 +41,7 @@ flutter pub add url_launcher
 flutter pub add page_transition
 ```
 <br>
-<li>Shared Preferences - O querido package para gerenciamento de dados interno do dispositivo!<li>
+<li>Shared Preferences - O querido package de gerenciamento de dados internos!<li>
 ```
 flutter pub add shared_preferences
 ```
