@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:sasa_bank/components/colored_button_row_component.dart';
 import 'package:sasa_bank/components/interactive_colored_row_component.dart';
+import 'package:sasa_bank/managements/cards/account/buttons/buttons_manager.dart';
 
-import 'package:sasa_bank/managements/label_floating_button_management.dart';
 import 'package:sasa_bank/widgets/custom_card_widget.dart';
 import 'package:sasa_bank/options/default_options.dart';
 
@@ -41,14 +41,7 @@ class _AccountCardState extends State<AccountCard> {
       externalChild: Column(
         children: [
           const SizedBox(height: 18),
-          const SingleChildScrollView(
-            physics: BouncingScrollPhysics(),
-            scrollDirection: Axis.horizontal,
-            child: Padding(
-              padding: EdgeInsets.only(left: 20, right: 20),
-              child: LabelFloatingButtonManagement(),
-            ),
-          ),
+          const ButtonsManager(),
           const SizedBox(height: 20),
           ColoredButtonRowComponent(
             onPressed: () {},

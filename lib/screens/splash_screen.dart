@@ -4,20 +4,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'package:sasa_bank/areas/colored_safe_area.dart';
-import 'package:sasa_bank/screens/home_screen.dart';
 import 'package:sasa_bank/options/default_options.dart';
-import 'package:page_transition/page_transition.dart';
 
-class LoadingScreen extends StatefulWidget {
-  const LoadingScreen({
+class SplashScreen extends StatefulWidget {
+  const SplashScreen({
     Key? key,
   }) : super(key: key);
 
   @override
-  State<LoadingScreen> createState() => _LoadingScreenState();
+  State<SplashScreen> createState() => _SplashScreenState();
 }
 
-class _LoadingScreenState extends State<LoadingScreen> {
+class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
@@ -37,18 +35,17 @@ class _LoadingScreenState extends State<LoadingScreen> {
   }
 
   route() {
-    Navigator.pushReplacement(
-        context,
-        PageTransition(
-            type: PageTransitionType.fade, child: const HomeScreen()));
+    Navigator.pushReplacementNamed(context, '/home');
   }
 
   initScreen(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-        statusBarColor: Colors.transparent,
-        systemNavigationBarDividerColor: Colors.transparent,
-        systemNavigationBarColor: defaultColorOptions.primaryColor,
-        systemNavigationBarIconBrightness: Brightness.light));
+    SystemChrome.setSystemUIOverlayStyle(
+      SystemUiOverlayStyle(
+          statusBarColor: Colors.transparent,
+          systemNavigationBarDividerColor: Colors.transparent,
+          systemNavigationBarColor: defaultColorOptions.primaryColor,
+          systemNavigationBarIconBrightness: Brightness.light),
+    );
 
     return ColoredSafeArea(
       color: defaultColorOptions.primaryColor,

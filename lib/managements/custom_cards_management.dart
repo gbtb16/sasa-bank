@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-import 'package:sasa_bank/managements/cards/account_card.dart';
-import 'package:sasa_bank/managements/cards/credit_card.dart';
-import 'package:sasa_bank/managements/cards/investiment_card.dart';
-import 'package:sasa_bank/managements/cards/discover_more_card.dart';
-import 'package:sasa_bank/managements/cards/safe_card.dart';
-import 'package:sasa_bank/managements/cards/shopping_card.dart';
+import 'package:sasa_bank/managements/cards/account/account_card.dart';
+import 'package:sasa_bank/managements/cards/credit_card/credit_card.dart';
+import 'package:sasa_bank/managements/cards/investiment/investiment_card.dart';
+import 'package:sasa_bank/managements/cards/discover_more/discover_more_card.dart';
+import 'package:sasa_bank/managements/cards/safe/safe_card.dart';
+import 'package:sasa_bank/managements/cards/shopping/shopping_card.dart';
 
 class CardsManagement extends StatefulWidget {
   const CardsManagement({Key? key}) : super(key: key);

@@ -29,7 +29,7 @@ class _TopMenuState extends State<TopMenu> {
       width: double.infinity,
       decoration: _boxDecoration,
       child: Padding(
-        padding: const EdgeInsets.only(left: 25, right: 25),
+        padding: const EdgeInsets.only(left: 15, right: 25),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -41,12 +41,17 @@ class _TopMenuState extends State<TopMenu> {
                 SizedBox(
                   width: 50,
                   height: 50,
-                  child: FittedBox(
-                    child: CircleAvatar(
-                      backgroundColor: _backgroundColorOfAvatar,
-                      child: Icon(
-                        Icons.person,
-                        color: defaultColorOptions.iconColor,
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/account');
+                    },
+                    child: FittedBox(
+                      child: CircleAvatar(
+                        backgroundColor: _backgroundColorOfAvatar,
+                        child: Icon(
+                          Icons.person_outlined,
+                          color: defaultColorOptions.iconColor,
+                        ),
                       ),
                     ),
                   ),

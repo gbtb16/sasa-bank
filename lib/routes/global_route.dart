@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
 
 import 'package:sasa_bank/components/behavior_standard.dart';
-import 'package:sasa_bank/screens/loading_screen.dart';
-import 'package:sasa_bank/options/default_options.dart';
+import 'package:sasa_bank/menus/top_menu/pages/account/account_page.dart';
+import 'package:sasa_bank/options/themes.dart';
+import 'package:sasa_bank/screens/home_screen.dart';
+import 'package:sasa_bank/screens/splash_screen.dart';
 
 class GlobalRoute extends StatefulWidget {
   const GlobalRoute({Key? key}) : super(key: key);
@@ -16,32 +19,36 @@ class _GlobalRouteState extends State<GlobalRoute> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'SasaBank',
-      theme: ThemeData(
-        fontFamily: 'Poppins',
-        primaryColor: Colors.white,
-        dividerColor: Colors.white,
-        backgroundColor: Colors.white,
-        floatingActionButtonTheme: FloatingActionButtonThemeData(
-          splashColor: defaultColorOptions.iconColor.withOpacity(0),
-        ),
-      ),
-      darkTheme: ThemeData(
-        fontFamily: 'Poppins',
-        primaryColor: Colors.white,
-        dividerColor: Colors.white,
-        backgroundColor: Colors.white,
-        floatingActionButtonTheme: FloatingActionButtonThemeData(
-          splashColor: defaultColorOptions.iconColor.withOpacity(0),
-        ),
-      ),
-      color: Colors.white,
-      highContrastDarkTheme: ThemeData.light(),
       themeMode: ThemeMode.light,
+      theme: defaultTheme,
+      darkTheme: defaultTheme,
+      color: Colors.white,
       highContrastTheme: ThemeData.light(),
+      highContrastDarkTheme: ThemeData.light(),
       builder: (context, child) {
         return ScrollConfiguration(behavior: BehaviorStandard(), child: child!);
       },
-      home: const LoadingScreen(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const SplashScreen(),
+        '/home': (context) => const HomeScreen(),
+        '/account': (context) => const AccountPage(),
+      },
+      onGenerateRoute: (settings) {
+        switch (settings.name) {
+          case '/home':
+            return PageTransition(
+                child: const HomeScreen(), type: PageTransitionType.fade);
+
+          case '/account':
+            return PageTransition(
+                child: const AccountPage(),
+                type: PageTransitionType.bottomToTop);
+
+          default:
+            return null;
+        }
+      },
     );
   }
 }

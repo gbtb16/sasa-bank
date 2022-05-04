@@ -13,7 +13,6 @@ class ColoredSafeArea extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         height: MediaQuery.of(context).size.height,
-        // height: double.infinity,
         color: color ?? defaultColorOptions.primaryColor,
         child: Column(
           children: [
