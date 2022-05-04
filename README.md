@@ -72,18 +72,6 @@ flutter pub add url_launcher
 flutter pub add page_transition
 ```
 
-* Shared Preferences - O querido package de gerenciamento de dados internos!
-
-```
-flutter pub add shared_preferences
-```
-
-* Provider - Problemas com gerenciamento de estados? Nunca mais!
-
-```
-flutter pub add provider
-```
-
 ## 🌠 Disposição de pastas do projeto:
 * `` lib(/) `` - Pasta raiz do projeto em _Flutter_.
 * `` /areas `` - Áreas que podem ser reutilizadas se baseando na responsividade.
