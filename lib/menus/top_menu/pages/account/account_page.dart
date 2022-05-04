@@ -33,8 +33,8 @@ class _AccountPageState extends State<AccountPage> {
             physics: const BouncingScrollPhysics(),
             child: Column(children: [
               Padding(
-                padding: const EdgeInsets.only(
-                    top: 20, left: 25, right: 25, bottom: 20),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 20, horizontal: 25),
                 child: Column(children: [
                   Row(
                     children: [

@@ -29,7 +29,7 @@ class _TopMenuState extends State<TopMenu> {
       width: double.infinity,
       decoration: _boxDecoration,
       child: Padding(
-        padding: const EdgeInsets.only(left: 15, right: 25),
+        padding: const EdgeInsets.only(left: 20, right: 25),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -63,16 +63,19 @@ class _TopMenuState extends State<TopMenu> {
                 ),
               ],
             ),
-            const Padding(padding: EdgeInsets.only(top: 25)),
+            const SizedBox(height: 25),
             Row(
               children: [
-                Text(
-                  'Olá, $_name',
-                  textAlign: TextAlign.start,
-                  style: TextStyle(
-                    color: defaultColorOptions.iconColor,
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500,
+                Padding(
+                  padding: const EdgeInsets.only(left: 5),
+                  child: Text(
+                    'Olá, $_name',
+                    textAlign: TextAlign.start,
+                    style: TextStyle(
+                      color: defaultColorOptions.iconColor,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
                 )
               ],
