@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:sasa_bank/options/default_options.dart';
 
 ThemeData defaultTheme = ThemeData(
-    fontFamily: 'Poppins',
+    fontFamily: 'Inter',
+    brightness: Brightness.light,
     primaryColor: Colors.white,
     dividerColor: Colors.white,
     backgroundColor: Colors.white,

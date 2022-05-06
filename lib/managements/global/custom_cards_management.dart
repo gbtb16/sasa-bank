@@ -8,7 +8,9 @@ import 'package:sasa_bank/managements/cards/safe/safe_card.dart';
 import 'package:sasa_bank/managements/cards/shopping/shopping_card.dart';
 
 class CardsManagement extends StatefulWidget {
-  const CardsManagement({Key? key}) : super(key: key);
+  const CardsManagement({
+    Key? key,
+  }) : super(key: key);
 
   @override
   State<CardsManagement> createState() => _CardsManagementState();

@@ -5,15 +5,16 @@ class DefaultColorOptions {
 
   Color primaryColor = const Color(0xff7d168c);
   Color secondColor = const Color(0xff9213a5);
+  Color? widgetsColor = Colors.blueGrey[50];
   Color textColor = Colors.black87;
-  Color? secondTextColor = Colors.black45;
+  Color? secondTextColor = Colors.grey[600];
 
   Color iconColor = Colors.white;
   Color transparent = Colors.transparent;
 
-  Color? thirdTextColor = Colors.grey[300];
+  Color? thirdTextColor = Colors.blueGrey[50];
   Color? enabledTextColor = Colors.green[800];
-  Color? dividerColor = Colors.grey[200];
+  Color? dividerColor = Colors.blueGrey[50];
 }
 
 DefaultColorOptions defaultColorOptions = DefaultColorOptions();

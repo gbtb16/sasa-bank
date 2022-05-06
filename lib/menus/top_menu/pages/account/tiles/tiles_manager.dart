@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:sasa_bank/menus/top_menu/pages/account/tiles/tiles_object.dart';
 import 'package:sasa_bank/options/default_options.dart';
+import 'package:sasa_bank/components/divider.dart' as components;
 
 class TilesManager extends StatefulWidget {
   const TilesManager({Key? key}) : super(key: key);
@@ -14,7 +15,6 @@ class _TilesManagerState extends State<TilesManager> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-        height: (tiles.length * 73),
         width: MediaQuery.of(context).size.width,
         child: ListView.builder(
             physics: const NeverScrollableScrollPhysics(),
@@ -35,7 +35,10 @@ class _TilesManagerState extends State<TilesManager> {
                   ),
                   title: Text(
                     titles[index],
-                    style: const TextStyle(fontSize: 15),
+                    style: const TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                   trailing: const Icon(
                     Icons.arrow_back_ios,
@@ -49,7 +52,7 @@ class _TilesManagerState extends State<TilesManager> {
                   ),
                   onTap: (functions[index]()),
                 ),
-                const SizedBox(height: 3),
+                const components.Divider(),
               ]);
             }));
   }

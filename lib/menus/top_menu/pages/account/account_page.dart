@@ -71,7 +71,8 @@ class _AccountPageState extends State<AccountPage> {
                         'Gabriel',
                         style: TextStyle(
                           color: defaultColorOptions.textColor,
-                          fontSize: 18,
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                     ],
@@ -81,6 +82,10 @@ class _AccountPageState extends State<AccountPage> {
                     Expanded(
                       child: Text(
                         'Agência 0001 • Conta 00000000-01\nBanco 0001 • Sasa Bank - Instituição de Pagamento',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          height: 1.5,
+                        ),
                       ),
                     ),
                   ]),

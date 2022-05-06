@@ -18,7 +18,6 @@ class _ShoppingCardState extends State<ShoppingCard> {
       title: 'Shopping',
       subtitle: 'Vantagens exclusivas das nossas marcas preferidas',
       hasArrowFoward: true,
-      hasBottomLine: true,
     );
   }
 }

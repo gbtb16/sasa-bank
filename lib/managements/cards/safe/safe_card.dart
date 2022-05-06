@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:sasa_bank/components/colored_button_row_component.dart';
+import 'package:sasa_bank/components/colored_button_row.dart';
 import 'package:sasa_bank/widgets/custom_card_widget.dart';
 
 class SafeCard extends StatefulWidget {
@@ -19,9 +19,8 @@ class _SafeCardState extends State<SafeCard> {
       title: 'Seguros',
       subtitle: 'Proteção para você cuidar do que importa',
       hasArrowFoward: false,
-      hasBottomLine: true,
       externalChild: Column(children: [
-        ColoredButtonRowComponent(
+        ColoredButtonRow(
           onPressed: () {},
           iconName: Icons.favorite_border,
           title: 'Seguro vida',

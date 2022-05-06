@@ -24,7 +24,7 @@ List<Button> buttons = [
   ),
   Button(
     heroTag: 'button-pay',
-    icon: Icons.shopping_basket_rounded,
+    icon: Icons.shopping_basket_outlined,
     title: 'Pagar',
     onPressed: () {},
   ),
@@ -48,13 +48,13 @@ List<Button> buttons = [
   ),
   Button(
     heroTag: 'button-charge',
-    icon: Icons.people,
+    icon: Icons.people_alt_outlined,
     title: 'Cobrar',
     onPressed: () {},
   ),
   Button(
     heroTag: 'button-donate',
-    icon: Icons.money,
+    icon: Icons.money_rounded,
     title: 'Doar',
     onPressed: () {},
   ),

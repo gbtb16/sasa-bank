@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
-import 'package:sasa_bank/components/colored_button_row_component.dart';
-import 'package:sasa_bank/components/interactive_colored_row_component.dart';
+import 'package:sasa_bank/components/colored_button_row.dart';
+import 'package:sasa_bank/components/interactive_colored_row.dart';
 import 'package:sasa_bank/managements/cards/account/buttons/buttons_manager.dart';
-
+import 'package:sasa_bank/menus/top_menu/top_menu.dart';
 import 'package:sasa_bank/widgets/custom_card_widget.dart';
 import 'package:sasa_bank/options/default_options.dart';
+import 'package:sasa_bank/managements/global/global_variables.dart' as globals;
 
 class AccountCard extends StatefulWidget {
   const AccountCard({Key? key}) : super(key: key);
@@ -15,38 +16,44 @@ class AccountCard extends StatefulWidget {
 }
 
 class _AccountCardState extends State<AccountCard> {
+  final globals.Visibility _visibility = visibility;
+
   @override
   Widget build(BuildContext context) {
     return CustomCardWidget(
       onPressed: () {},
       title: 'Conta',
       hasArrowFoward: true,
-      hasBottomLine: true,
       internalChild: Column(
         children: [
+          const SizedBox(height: 7),
           Row(
             children: [
-              Text(
-                'R\$ 10.002,09',
-                style: TextStyle(
-                  color: defaultColorOptions.textColor,
-                  fontSize: 25,
-                  fontWeight: FontWeight.w500,
-                ),
-              )
+              AnimatedBuilder(
+                  animation: _visibility,
+                  builder: (context, _) {
+                    return Text(
+                      _visibility.getIsVisible() ? 'R\$ 10.002,09' : '••••',
+                      style: TextStyle(
+                        color: defaultColorOptions.textColor,
+                        fontSize: 23,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    );
+                  })
             ],
           )
         ],
       ),
       externalChild: Column(
         children: [
-          const SizedBox(height: 18),
+          const SizedBox(height: 35),
           const ButtonsManager(),
-          const SizedBox(height: 20),
-          ColoredButtonRowComponent(
-            onPressed: () {},
+          const SizedBox(height: 15),
+          ColoredButtonRow(
             iconName: Icons.credit_card,
             title: 'Meus cartões',
+            onPressed: () {},
           ),
           const SizedBox(height: 25),
           SingleChildScrollView(
@@ -57,14 +64,14 @@ class _AccountCardState extends State<AccountCard> {
               child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: const [
-                    InteractiveColoredRowComponent(
+                    InteractiveColoredRow(
                       text: 'Conheça ',
-                      boldText: 'SasaBank Vida:\n',
+                      coloredText: 'SasaBank Vida:\n',
                       moreText: 'um seguro simples e que cabe no seu bolso.',
                     ),
-                    InteractiveColoredRowComponent(
+                    InteractiveColoredRow(
                         text: 'Salve seus amigos da\nburocracia. ',
-                        boldText:
+                        coloredText:
                             'Faça um convite através de nosso app para local de sua escolha.'),
                   ]),
             ),

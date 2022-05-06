@@ -1,24 +1,29 @@
 import 'package:flutter/material.dart';
 
 import 'package:sasa_bank/options/default_options.dart';
+import 'package:sasa_bank/managements/global/global_variables.dart' as globals;
+
+final globals.Visibility visibility = globals.Visibility();
 
 class TopMenu extends StatefulWidget {
   final String name;
   final BoxDecoration? boxDecoration;
   final Color? backgroundColorOfAvatar;
 
-  const TopMenu(
-      {Key? key,
-      required this.name,
-      required this.boxDecoration,
-      required this.backgroundColorOfAvatar})
-      : super(key: key);
+  const TopMenu({
+    Key? key,
+    required this.name,
+    required this.boxDecoration,
+    required this.backgroundColorOfAvatar,
+  }) : super(key: key);
 
   @override
   State<TopMenu> createState() => _TopMenuState();
 }
 
 class _TopMenuState extends State<TopMenu> {
+  bool _isVisible = true;
+
   @override
   Widget build(BuildContext context) {
     final String _name = widget.name;
@@ -56,10 +61,38 @@ class _TopMenuState extends State<TopMenu> {
                     ),
                   ),
                 ),
-                Image.asset(
-                  'assets/app/v2/imgs/sasa_letters.png',
-                  width: 50,
-                  height: 24,
+                Row(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          _isVisible = !_isVisible;
+                        });
+                        visibility.setIsVisible(_isVisible);
+                      },
+                      child: AnimatedBuilder(
+                        animation: visibility,
+                        builder: (context, _) {
+                          return CircleAvatar(
+                            backgroundColor: defaultColorOptions.primaryColor,
+                            child: Icon(
+                              visibility.getIsVisible()
+                                  ? Icons.visibility_outlined
+                                  : Icons.visibility_off_outlined,
+                              size: 25,
+                              color: defaultColorOptions.iconColor,
+                            ),
+                          );
+                        },
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    Image.asset(
+                      'assets/app/v2/imgs/sasa_letters.png',
+                      width: 50,
+                      height: 24,
+                    ),
+                  ],
                 ),
               ],
             ),
@@ -73,14 +106,14 @@ class _TopMenuState extends State<TopMenu> {
                     textAlign: TextAlign.start,
                     style: TextStyle(
                       color: defaultColorOptions.iconColor,
-                      fontSize: 20,
-                      fontWeight: FontWeight.w500,
+                      fontSize: 17,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                 )
               ],
             ),
-            const SizedBox(height: 17),
+            const SizedBox(height: 25),
           ],
         ),
       ),

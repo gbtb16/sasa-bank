@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 import 'package:sasa_bank/options/default_options.dart';
 
-class ColoredButtonRowComponent extends StatefulWidget {
+class ColoredButtonRow extends StatefulWidget {
   final IconData? iconName;
   final String title;
   final String? secondTitle;
   final Color? backgroundColor;
   final Function onPressed;
 
-  const ColoredButtonRowComponent(
+  const ColoredButtonRow(
       {Key? key,
       this.iconName,
       required this.title,
@@ -19,11 +19,10 @@ class ColoredButtonRowComponent extends StatefulWidget {
       : super(key: key);
 
   @override
-  State<ColoredButtonRowComponent> createState() =>
-      _ColoredButtonRowComponentState();
+  State<ColoredButtonRow> createState() => _ColoredButtonRowState();
 }
 
-class _ColoredButtonRowComponentState extends State<ColoredButtonRowComponent> {
+class _ColoredButtonRowState extends State<ColoredButtonRow> {
   @override
   Widget build(BuildContext context) {
     final _iconName = widget.iconName;
@@ -54,9 +53,16 @@ class _ColoredButtonRowComponentState extends State<ColoredButtonRowComponent> {
             _onPressed();
           },
           child: Row(children: [
-            _hasIcon ? Icon(_iconName, color: Colors.white) : Container(),
             _hasIcon
-                ? const Padding(padding: EdgeInsets.only(left: 15))
+                ? Icon(
+                    _iconName,
+                    color: defaultColorOptions.textColor,
+                  )
+                : Container(),
+            _hasIcon
+                ? const Padding(
+                    padding: EdgeInsets.only(left: 15),
+                  )
                 : Container(),
             Expanded(
               child: Row(
@@ -64,34 +70,31 @@ class _ColoredButtonRowComponentState extends State<ColoredButtonRowComponent> {
                 children: [
                   Text(_title,
                       style: TextStyle(
-                        color: defaultColorOptions.iconColor,
+                        color: defaultColorOptions.textColor,
                         fontSize: 13,
-                        fontWeight: FontWeight.w500,
+                        fontWeight: FontWeight.bold,
                       )),
                   _hasSecondTitle
                       ? Text(_secondTitle!,
                           style: TextStyle(
-                            color: defaultColorOptions.iconColor,
+                            color: defaultColorOptions.textColor,
                             fontSize: 13,
-                            fontWeight: FontWeight.w500,
+                            fontWeight: FontWeight.bold,
                           ))
                       : const SizedBox(height: 0),
                 ],
               ),
             ),
           ]),
-          style: ButtonStyle(
-            shape: MaterialStateProperty.all<RoundedRectangleBorder?>(
-                RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(15))),
-            backgroundColor: MaterialStateProperty.all<Color?>(
-                _backgroundColor ?? defaultColorOptions.primaryColor),
-            elevation: MaterialStateProperty.all<double?>(0),
-            padding: MaterialStateProperty.all<EdgeInsets?>(
-                const EdgeInsets.only(
-                    top: 15, left: 20, right: 20, bottom: 15)),
-            foregroundColor: MaterialStateProperty.all<Color?>(
-                _backgroundColor ?? defaultColorOptions.primaryColor),
+          style: ElevatedButton.styleFrom(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(15),
+            ),
+            primary: _backgroundColor ?? defaultColorOptions.widgetsColor,
+            elevation: 0,
+            padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 15),
+            shadowColor: _backgroundColor ?? defaultColorOptions.widgetsColor,
+            onPrimary: defaultColorOptions.widgetsColor,
           ),
         ));
   }

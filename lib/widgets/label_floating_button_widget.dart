@@ -38,10 +38,10 @@ class LabelFloatingButtonWidget extends StatelessWidget {
                     onPressed();
                   },
                   backgroundColor:
-                      backgroundColor ?? defaultColorOptions.primaryColor,
+                      backgroundColor ?? defaultColorOptions.widgetsColor,
                   elevation: 0,
                   child: Icon(icon,
-                      color: iconColor ?? defaultColorOptions.iconColor,
+                      color: iconColor ?? defaultColorOptions.textColor,
                       size: 20),
                 ),
               ),
@@ -52,7 +52,7 @@ class LabelFloatingButtonWidget extends StatelessWidget {
               style: TextStyle(
                 color: defaultColorOptions.textColor,
                 fontSize: 13,
-                fontWeight: FontWeight.w500,
+                fontWeight: FontWeight.bold,
               ),
               textAlign: TextAlign.center,
               maxLines: 2,
