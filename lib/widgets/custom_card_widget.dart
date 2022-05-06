@@ -105,7 +105,6 @@ class CustomCardWidget extends StatelessWidget {
                             subtitle ?? '',
                             style: TextStyle(
                               height: 1.5,
-                              fontFamily: 'Poppins',
                               color: defaultColorOptions.secondTextColor,
                               fontSize: 14,
                               fontWeight: FontWeight.bold,

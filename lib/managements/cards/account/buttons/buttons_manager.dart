@@ -19,7 +19,7 @@ class _ButtonsManagerState extends State<ButtonsManager> {
       child: ListView.builder(
           scrollDirection: Axis.horizontal,
           physics: const BouncingScrollPhysics(),
-          padding: const EdgeInsets.symmetric(horizontal: 25),
+          padding: const EdgeInsets.only(left: 30, right: 25),
           shrinkWrap: true,
           itemCount: buttons.length,
           itemBuilder: (context, index) {
