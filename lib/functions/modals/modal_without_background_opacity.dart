@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 
+import 'package:sasa_bank/options/default_options.dart';
+
 Future showModalButtonSheetWithoutBackgroundOpacity(
     BuildContext context, Widget page) {
   return showModalBottomSheet(
     isScrollControlled: true,
-    barrierColor: Colors.black.withOpacity(0),
+    isDismissible: false,
+    enableDrag: false,
     context: context,
+    backgroundColor: defaultColorOptions.transparent,
+    barrierColor: Colors.black.withOpacity(0),
     builder: (context) => page,
   );
 }

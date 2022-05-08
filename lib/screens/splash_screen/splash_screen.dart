@@ -41,10 +41,11 @@ class _SplashScreenState extends State<SplashScreen> {
   initScreen(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(
       SystemUiOverlayStyle(
-          statusBarColor: Colors.transparent,
-          systemNavigationBarDividerColor: Colors.transparent,
-          systemNavigationBarColor: defaultColorOptions.primaryColor,
-          systemNavigationBarIconBrightness: Brightness.light),
+        statusBarColor: defaultColorOptions.transparent,
+        systemNavigationBarDividerColor: defaultColorOptions.transparent,
+        systemNavigationBarColor: defaultColorOptions.primaryColor,
+        systemNavigationBarIconBrightness: Brightness.light,
+      ),
     );
 
     return ColoredSafeArea(
