@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:page_transition/page_transition.dart';
 
-import 'package:sasa_bank/system/behavior_standard.dart';
+import 'package:page_transition/page_transition.dart';
+import 'package:sasa_bank/options/scrolling_options/behavior_standard.dart';
 import 'package:sasa_bank/menus/top_menu/pages/account/account_page.dart';
 import 'package:sasa_bank/options/themes.dart';
 import 'package:sasa_bank/screens/home_screen.dart';
