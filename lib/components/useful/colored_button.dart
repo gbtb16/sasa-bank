@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 import 'package:sasa_bank/options/default_options.dart';
 
-class ColoredButtonRow extends StatefulWidget {
+class ColoredButton extends StatefulWidget {
   final IconData? iconName;
   final String title;
   final String? secondTitle;
   final Color? backgroundColor;
   final Function onPressed;
 
-  const ColoredButtonRow(
+  const ColoredButton(
       {Key? key,
       this.iconName,
       required this.title,
@@ -19,10 +19,10 @@ class ColoredButtonRow extends StatefulWidget {
       : super(key: key);
 
   @override
-  State<ColoredButtonRow> createState() => _ColoredButtonRowState();
+  State<ColoredButton> createState() => _ColoredButtonState();
 }
 
-class _ColoredButtonRowState extends State<ColoredButtonRow> {
+class _ColoredButtonState extends State<ColoredButton> {
   @override
   Widget build(BuildContext context) {
     final _iconName = widget.iconName;
@@ -47,7 +47,7 @@ class _ColoredButtonRowState extends State<ColoredButtonRow> {
     }
 
     return Padding(
-        padding: const EdgeInsets.only(left: 20, right: 20),
+        padding: const EdgeInsets.only(left: 25, right: 20),
         child: ElevatedButton(
           onPressed: () {
             _onPressed();
@@ -61,7 +61,7 @@ class _ColoredButtonRowState extends State<ColoredButtonRow> {
                 : Container(),
             _hasIcon
                 ? const Padding(
-                    padding: EdgeInsets.only(left: 15),
+                    padding: EdgeInsets.only(left: 20),
                   )
                 : Container(),
             Expanded(

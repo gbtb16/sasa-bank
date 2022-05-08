@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:sasa_bank/components/colored_button_row.dart';
-import 'package:sasa_bank/components/interactive_colored_row.dart';
+import 'package:sasa_bank/components/useful/colored_button.dart';
+import 'package:sasa_bank/components/useful/interactive_rectangle.dart';
 import 'package:sasa_bank/managements/cards/account/buttons/buttons_manager.dart';
 import 'package:sasa_bank/menus/top_menu/top_menu.dart';
 import 'package:sasa_bank/widgets/custom_card_widget.dart';
@@ -33,10 +33,10 @@ class _AccountCardState extends State<AccountCard> {
                   animation: _visibility,
                   builder: (context, _) {
                     return Text(
-                      _visibility.getIsVisible() ? 'R\$ 10.002,09' : '••••',
+                      _visibility.getIsVisible() ? 'R\$ 456,68' : '••••',
                       style: TextStyle(
                         color: defaultColorOptions.textColor,
-                        fontSize: 23,
+                        fontSize: 24,
                         fontWeight: FontWeight.bold,
                       ),
                     );
@@ -47,10 +47,10 @@ class _AccountCardState extends State<AccountCard> {
       ),
       externalChild: Column(
         children: [
-          const SizedBox(height: 35),
+          const SizedBox(height: 30),
           const ButtonsManager(),
-          const SizedBox(height: 15),
-          ColoredButtonRow(
+          const SizedBox(height: 20),
+          ColoredButton(
             iconName: Icons.credit_card,
             title: 'Meus cartões',
             onPressed: () {},
@@ -60,16 +60,16 @@ class _AccountCardState extends State<AccountCard> {
             physics: const BouncingScrollPhysics(),
             scrollDirection: Axis.horizontal,
             child: Padding(
-              padding: const EdgeInsets.only(left: 20),
+              padding: const EdgeInsets.only(left: 25),
               child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: const [
-                    InteractiveColoredRow(
+                    InteractiveRectangle(
                       text: 'Conheça ',
                       coloredText: 'SasaBank Vida:\n',
                       moreText: 'um seguro simples e que cabe no seu bolso.',
                     ),
-                    InteractiveColoredRow(
+                    InteractiveRectangle(
                         text: 'Salve seus amigos da\nburocracia. ',
                         coloredText:
                             'Faça um convite através de nosso app para local de sua escolha.'),

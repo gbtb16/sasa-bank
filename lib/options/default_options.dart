@@ -1,40 +1,74 @@
 import 'package:flutter/material.dart';
 
-class DefaultColorOptions {
-  late Map<String, String> colorPreferences;
+class DefaultColorOptions extends ChangeNotifier {
+  Color _primaryColor = const Color(0xff7d168c);
+  Color _secondColor = const Color(0xff9213a5);
+  Color _widgetsColor = const Color(0xfff0f1f5);
+  Color _textColor = Colors.black87;
+  Color? _secondTextColor = Colors.grey[600];
 
-  Color primaryColor = const Color(0xff7d168c);
-  Color secondColor = const Color(0xff9213a5);
-  Color? widgetsColor = Colors.blueGrey[50];
-  Color textColor = Colors.black87;
-  Color? secondTextColor = Colors.grey[600];
+  Color _iconColor = Colors.white;
+  final Color _transparent = Colors.transparent;
 
-  Color iconColor = Colors.white;
-  Color transparent = Colors.transparent;
+  Color _thirdTextColor = const Color(0xfff0f1f5);
+  Color? _enabledTextColor = Colors.green[800];
+  Color _dividerColor = const Color(0xfff0f1f5);
 
-  Color? thirdTextColor = Colors.blueGrey[50];
-  Color? enabledTextColor = Colors.green[800];
-  Color? dividerColor = Colors.blueGrey[50];
+  Color get primaryColor => _primaryColor;
+  Color get secondColor => _secondColor;
+  Color get widgetsColor => _widgetsColor;
+  Color get textColor => _textColor;
+  Color? get secondTextColor => _secondTextColor;
+  Color get iconColor => _iconColor;
+  Color get transparent => _transparent;
+  Color get thirdTextColor => _thirdTextColor;
+  Color? get enabledTextColor => _enabledTextColor;
+  Color get dividerColor => _dividerColor;
+
+  set primaryColor(Color color) {
+    _primaryColor = color;
+    notifyListeners();
+  }
+
+  set secondColor(Color color) {
+    _secondColor = color;
+    notifyListeners();
+  }
+
+  set widgetsColor(Color color) {
+    _widgetsColor = color;
+    notifyListeners();
+  }
+
+  set textColor(Color color) {
+    _textColor = color;
+    notifyListeners();
+  }
+
+  set secondTextColor(Color? color) {
+    _secondTextColor = color;
+    notifyListeners();
+  }
+
+  set iconColor(Color color) {
+    _iconColor = color;
+    notifyListeners();
+  }
+
+  set thirdTextColor(Color color) {
+    _thirdTextColor = color;
+    notifyListeners();
+  }
+
+  set enabledTextColor(Color? color) {
+    _enabledTextColor = color;
+    notifyListeners();
+  }
+
+  set dividerColor(Color color) {
+    _dividerColor = color;
+    notifyListeners();
+  }
 }
 
 DefaultColorOptions defaultColorOptions = DefaultColorOptions();
-
-class DefaultPattern {
-  Color primaryColor = const Color(0xff7d168c);
-  Color secondColor = const Color(0xff9213a5);
-}
-
-class BluePattern {
-  Color primaryColor = Colors.blue;
-  Color secondColor = const Color(0xff64b5f6);
-}
-
-class RedPattern {
-  Color primaryColor = const Color(0xffef5400);
-  Color secondColor = const Color(0xffef5350);
-}
-
-class DarkPattern {
-  Color primaryColor = const Color(0xff600f6c);
-  Color secondColor = const Color(0xff7d168c);
-}

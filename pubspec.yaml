@@ -2,7 +2,7 @@ name: sasa_bank
 description: Sasa Bank
 
 publish_to: 'none' 
-version: 1.0.3+3
+version: 1.0.3+4
 
 environment:
   sdk: ">=2.16.1 <3.0.0"
@@ -23,12 +23,12 @@ flutter_native_splash:
   ios: true
 
 flutter_icons:
-  image_path: "assets/app/v2/imgs/android-logo.png"
+  image_path: "assets/app/v3/imgs/android-logo.png"
   android: true
   ios: true
   remove_alpha_ios: true
   adaptive_icon_background: "#930c90"
-  adaptive_icon_foreground: "assets/app/v2/imgs/android-logo.png"
+  adaptive_icon_foreground: "assets/app/v3/imgs/android-logo-x05.png"
 
 dev_dependencies:
   flutter_test:
@@ -38,7 +38,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/app/sasa_letters.png
+    - assets/app/v2/imgs/sasa_letters.png
   fonts:
     - family: Inter
       fonts:

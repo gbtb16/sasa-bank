@@ -32,6 +32,8 @@
 /build/
 analysis_options.yaml
 /assets/app/fonts/fonts-test/
+/assets/app/imgs/
+/assets/app/v2/
 
 # Web related
 lib/generated_plugin_registrant.dart

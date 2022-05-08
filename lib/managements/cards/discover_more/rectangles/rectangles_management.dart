@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:sasa_bank/components/rectangle.dart';
+import 'package:sasa_bank/components/templates/rectangle.dart';
 import 'package:sasa_bank/managements/cards/discover_more/rectangles/rectangles_object.dart';
 
 class RectanglesManagement extends StatefulWidget {

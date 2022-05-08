@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:sasa_bank/functions/modals/modal_without_background_opacity.dart';
+import 'package:sasa_bank/menus/top_menu/pages/account/account_page.dart';
 import 'package:sasa_bank/options/default_options.dart';
 import 'package:sasa_bank/managements/global/global_variables.dart' as globals;
 
@@ -39,7 +41,7 @@ class _TopMenuState extends State<TopMenu> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Padding(padding: EdgeInsets.only(top: 15)),
+            const SizedBox(height: 10),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -48,7 +50,8 @@ class _TopMenuState extends State<TopMenu> {
                   height: 50,
                   child: GestureDetector(
                     onTap: () {
-                      Navigator.pushNamed(context, '/account');
+                      showModalButtonSheetWithoutBackgroundOpacity(
+                          context, const AccountPage());
                     },
                     child: FittedBox(
                       child: CircleAvatar(
@@ -86,17 +89,11 @@ class _TopMenuState extends State<TopMenu> {
                         },
                       ),
                     ),
-                    const SizedBox(width: 10),
-                    Image.asset(
-                      'assets/app/v2/imgs/sasa_letters.png',
-                      width: 50,
-                      height: 24,
-                    ),
                   ],
                 ),
               ],
             ),
-            const SizedBox(height: 25),
+            const SizedBox(height: 30),
             Row(
               children: [
                 Padding(

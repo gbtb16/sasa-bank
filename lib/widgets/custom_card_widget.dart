@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:sasa_bank/options/default_options.dart';
-import 'package:sasa_bank/components/divider.dart' as components;
+import 'package:sasa_bank/components/ui/divider.dart' as components;
 
 class CustomCardWidget extends StatelessWidget {
   final IconData? iconName;

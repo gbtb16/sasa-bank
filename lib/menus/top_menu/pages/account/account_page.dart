@@ -32,6 +32,7 @@ class _AccountPageState extends State<AccountPage> {
           child: SingleChildScrollView(
             physics: const BouncingScrollPhysics(),
             child: Column(children: [
+              const SizedBox(height: 25),
               Padding(
                 padding:
                     const EdgeInsets.symmetric(vertical: 20, horizontal: 25),
@@ -40,7 +41,7 @@ class _AccountPageState extends State<AccountPage> {
                     children: [
                       GestureDetector(
                         onTap: () {
-                          Navigator.pop(context);
+                          Navigator.of(context).pop();
                         },
                         child: Icon(
                           Icons.close,
@@ -89,6 +90,7 @@ class _AccountPageState extends State<AccountPage> {
                       ),
                     ),
                   ]),
+                  const SizedBox(height: 3),
                 ]),
               ),
               const TilesManager(),

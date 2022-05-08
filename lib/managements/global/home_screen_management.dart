@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:sasa_bank/managements/global/custom_cards_management.dart';
 import 'package:sasa_bank/menus/top_menu/top_menu.dart';
 import 'package:sasa_bank/options/default_options.dart';
-import '../../areas/expanded_scrolling_area.dart';
+import '../../areas/expanded_scrolling_refresh_area.dart';
 
 class HomeScreenManagement extends StatefulWidget {
   const HomeScreenManagement({Key? key}) : super(key: key);
@@ -15,7 +15,7 @@ class HomeScreenManagement extends StatefulWidget {
 class _HomeScreenManagementState extends State<HomeScreenManagement> {
   @override
   Widget build(BuildContext context) {
-    return ExpandedScrollingArea(
+    return ExpandedScrollingRefreshArea(
       child: Column(
         children: [
           TopMenu(

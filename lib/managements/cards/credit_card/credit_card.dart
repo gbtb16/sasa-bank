@@ -43,10 +43,10 @@ class _CreditCardState extends State<CreditCard> {
                 animation: _visibility,
                 builder: (context, _) {
                   return Text(
-                    _visibility.getIsVisible() ? 'R\$ 7.586,94' : '••••',
+                    _visibility.getIsVisible() ? 'R\$ 586,94' : '••••',
                     style: TextStyle(
                       color: defaultColorOptions.textColor,
-                      fontSize: 23,
+                      fontSize: 24,
                       fontWeight: FontWeight.bold,
                     ),
                   );
@@ -68,7 +68,7 @@ class _CreditCardState extends State<CreditCard> {
                 animation: _visibility,
                 builder: (context, _) {
                   return Text(
-                    _visibility.getIsVisible() ? 'R\$4.325,52' : '••••',
+                    _visibility.getIsVisible() ? 'R\$352,52' : '••••',
                     style: TextStyle(
                       color: defaultColorOptions.secondTextColor,
                       fontSize: 13,

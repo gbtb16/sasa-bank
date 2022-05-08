@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 
 import 'package:sasa_bank/options/default_options.dart';
 
-class InteractiveColoredRow extends StatelessWidget {
+class InteractiveRectangle extends StatelessWidget {
   final String text;
   final String? coloredText;
   final String? moreText;
   final Color? backgroundColor;
 
-  const InteractiveColoredRow({
+  const InteractiveRectangle({
     Key? key,
     required this.text,
     this.coloredText,
@@ -56,7 +56,7 @@ class InteractiveColoredRow extends StatelessWidget {
                 primary: backgroundColor ?? defaultColorOptions.widgetsColor,
                 elevation: 0,
                 padding: const EdgeInsets.only(
-                    top: 25, left: 20, right: 20, bottom: 30),
+                    top: 25, left: 30, right: 20, bottom: 30),
                 shadowColor:
                     backgroundColor ?? defaultColorOptions.widgetsColor,
                 onPrimary: defaultColorOptions.widgetsColor,

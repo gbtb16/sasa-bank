@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:sasa_bank/functions/global/launch_whatsapp_function.dart';
+import 'package:sasa_bank/functions/modals/modal_with_background_opacity.dart';
+import 'package:sasa_bank/managements/modals/pix/pix_page.dart';
 
 class Button {
-  final String heroTag;
   final IconData icon;
   final String title;
   late Function onPressed;
 
   Button({
-    required this.heroTag,
     required this.icon,
     required this.title,
     required this.onPressed,
@@ -17,57 +17,50 @@ class Button {
 
 List<Button> buttons = [
   Button(
-    heroTag: 'button-pix',
     icon: Icons.pix,
     title: 'Área Pix',
-    onPressed: () {},
+    onPressed: (context) {
+      showModalButtonSheetWithBackgroundOpacity(context, const PixPage());
+    },
   ),
   Button(
-    heroTag: 'button-pay',
     icon: Icons.shopping_basket_outlined,
     title: 'Pagar',
     onPressed: () {},
   ),
   Button(
-    heroTag: 'button-transfer',
     icon: Icons.transfer_within_a_station,
     title: 'Transferir',
     onPressed: () {},
   ),
   Button(
-    heroTag: 'button-deposit',
     icon: Icons.deblur,
     title: 'Depositar',
     onPressed: () {},
   ),
   Button(
-    heroTag: 'button-cellphone-recharge',
     icon: Icons.smartphone,
-    title: 'Recarga de celular',
+    title: 'Recarga de\ncelular',
     onPressed: () {},
   ),
   Button(
-    heroTag: 'button-charge',
     icon: Icons.people_alt_outlined,
     title: 'Cobrar',
     onPressed: () {},
   ),
   Button(
-    heroTag: 'button-donate',
     icon: Icons.money_rounded,
     title: 'Doar',
     onPressed: () {},
   ),
   Button(
-    heroTag: 'button-invite-friends',
     icon: Icons.whatsapp,
-    title: 'Convidar amigos',
+    title: 'Convidar\namigos',
     onPressed: () {
       launchWhatsApp();
     },
   ),
   Button(
-    heroTag: 'button-internacional-transfer',
     icon: Icons.transform,
     title: 'Transferir\nInternac.',
     onPressed: () {},
