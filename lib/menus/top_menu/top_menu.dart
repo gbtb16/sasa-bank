@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:sasa_bank/functions/modals/modal_without_background_opacity.dart';
 import 'package:sasa_bank/menus/top_menu/pages/account/account_page.dart';
 import 'package:sasa_bank/options/default_options.dart';
-import 'package:sasa_bank/managements/global/global_variables.dart' as globals;
+import 'package:sasa_bank/managements/global/visibility_management.dart'
+    as globals;
 
 final globals.Visibility visibility = globals.Visibility();
 

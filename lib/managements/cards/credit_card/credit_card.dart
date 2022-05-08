@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:sasa_bank/menus/top_menu/top_menu.dart';
 import 'package:sasa_bank/widgets/custom_card_widget.dart';
 import 'package:sasa_bank/options/default_options.dart';
-import 'package:sasa_bank/managements/global/global_variables.dart' as globals;
+import 'package:sasa_bank/managements/global/visibility_management.dart'
+    as globals;
 
 class CreditCard extends StatefulWidget {
   const CreditCard({Key? key}) : super(key: key);

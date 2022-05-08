@@ -21,7 +21,12 @@ class TopBar extends StatelessWidget {
     }
 
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 25),
+      padding: const EdgeInsets.only(
+        top: 20,
+        left: 25,
+        right: 25,
+        bottom: 15,
+      ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.start,
