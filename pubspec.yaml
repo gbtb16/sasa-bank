@@ -2,7 +2,7 @@ name: sasa_bank
 description: Sasa Bank
 
 publish_to: 'none' 
-version: 1.0.3+7
+version: 1.0.3+8
 
 environment:
   sdk: ">=2.16.1 <3.0.0"
