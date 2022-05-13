@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:sasa_bank/components/templates/rectangle.dart';
-import 'package:sasa_bank/managements/cards/discover_more/rectangles/rectangles_object.dart';
+import 'package:sasa_bank/src/components/templates/rectangle.dart';
+import 'package:sasa_bank/src/managements/cards/discover_more/rectangles/rectangles_object.dart';
 
 class RectanglesManagement extends StatefulWidget {
   const RectanglesManagement({Key? key}) : super(key: key);

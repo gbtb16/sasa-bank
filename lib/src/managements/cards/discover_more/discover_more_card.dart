@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:sasa_bank/managements/cards/discover_more/rectangles/rectangles_management.dart';
-import 'package:sasa_bank/widgets/custom_card_widget.dart';
+import 'package:sasa_bank/src/managements/cards/discover_more/rectangles/rectangles_management.dart';
+import 'package:sasa_bank/src/widgets/custom_card_widget.dart';
 
 class DiscoverMoreCard extends StatefulWidget {
   const DiscoverMoreCard({Key? key}) : super(key: key);

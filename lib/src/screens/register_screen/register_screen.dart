@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:sasa_bank/areas/colored_safe_area.dart';
+import 'package:sasa_bank/src/areas/colored_safe_area.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({Key? key}) : super(key: key);

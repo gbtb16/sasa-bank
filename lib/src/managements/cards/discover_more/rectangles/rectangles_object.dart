@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:sasa_bank/functions/global/launch_whatsapp_function.dart';
+import 'package:sasa_bank/src/functions/global/launch_whatsapp_function.dart';
 
 class RectangleObject {
   final IconData iconName;

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:sasa_bank/src/areas/colored_safe_area.dart';
 
 class LoginScreen extends StatefulWidget {
