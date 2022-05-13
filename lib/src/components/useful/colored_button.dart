@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:sasa_bank/options/default_options.dart';
+import 'package:sasa_bank/src/options/default_options.dart';
 
 class ColoredButton extends StatefulWidget {
   final IconData? iconName;

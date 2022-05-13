@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'package:sasa_bank/menus/top_menu/top_menu.dart';
-import 'package:sasa_bank/widgets/custom_card_widget.dart';
-import 'package:sasa_bank/options/default_options.dart';
-import 'package:sasa_bank/managements/global/visibility_management.dart'
+import 'package:sasa_bank/src/menus/top_menu/top_menu.dart';
+import 'package:sasa_bank/src/widgets/custom_card_widget.dart';
+import 'package:sasa_bank/src/options/default_options.dart';
+import 'package:sasa_bank/src/managements/global/visibility_management.dart'
     as globals;
 
 class CreditCard extends StatefulWidget {

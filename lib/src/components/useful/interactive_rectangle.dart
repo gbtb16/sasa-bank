@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:sasa_bank/options/default_options.dart';
+import 'package:sasa_bank/src/options/default_options.dart';
 
 class InteractiveRectangle extends StatelessWidget {
   final String text;

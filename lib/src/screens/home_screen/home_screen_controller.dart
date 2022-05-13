@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
-import 'package:sasa_bank/managements/cards/custom_cards_management.dart';
-import 'package:sasa_bank/menus/top_menu/top_menu.dart';
-import 'package:sasa_bank/options/default_options.dart';
+import 'package:sasa_bank/src/managements/cards/custom_cards_management.dart';
+import 'package:sasa_bank/src/menus/top_menu/top_menu.dart';
+import 'package:sasa_bank/src/options/default_options.dart';
 import '../../areas/expanded_scrolling_refresh_area.dart';
 
-class HomeScreenManagement extends StatefulWidget {
-  const HomeScreenManagement({Key? key}) : super(key: key);
+class HomeScreenController extends StatefulWidget {
+  const HomeScreenController({Key? key}) : super(key: key);
 
   @override
-  State<HomeScreenManagement> createState() => _HomeScreenManagementState();
+  State<HomeScreenController> createState() => _HomeScreenControllerState();
 }
 
-class _HomeScreenManagementState extends State<HomeScreenManagement> {
+class _HomeScreenControllerState extends State<HomeScreenController> {
   @override
   Widget build(BuildContext context) {
     return ExpandedScrollingRefreshArea(

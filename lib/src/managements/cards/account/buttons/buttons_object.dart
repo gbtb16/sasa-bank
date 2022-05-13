@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:sasa_bank/functions/global/launch_whatsapp_function.dart';
-import 'package:sasa_bank/functions/modals/modal_with_background_opacity.dart';
-import 'package:sasa_bank/managements/modals/pix/pix_page.dart';
+
+import 'package:sasa_bank/src/functions/global/launch_whatsapp_function.dart';
+import 'package:sasa_bank/src/functions/modals/modal_with_background_opacity.dart';
+import 'package:sasa_bank/src/managements/modals/pix/pix_page.dart';
 
 class Button {
   final IconData icon;

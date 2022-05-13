@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:sasa_bank/menus/top_menu/pages/account/tiles/tiles_manager.dart';
-import 'package:sasa_bank/options/default_options.dart';
+import 'package:sasa_bank/src/menus/top_menu/pages/account/tiles/tiles_manager.dart';
+import 'package:sasa_bank/src/options/default_options.dart';
 
 class AccountPageManagement extends StatefulWidget {
   const AccountPageManagement({Key? key}) : super(key: key);

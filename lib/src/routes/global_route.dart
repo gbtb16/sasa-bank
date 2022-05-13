@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 import 'package:page_transition/page_transition.dart';
-import 'package:sasa_bank/options/scrolling_options/behavior_standard.dart';
-import 'package:sasa_bank/menus/top_menu/pages/account/account_page.dart';
-import 'package:sasa_bank/options/themes.dart';
-import 'package:sasa_bank/screens/home_screen/home_screen.dart';
-import 'package:sasa_bank/screens/splash_screen/splash_screen.dart';
+import 'package:sasa_bank/src/options/scrolling_options/behavior_standard.dart';
+import 'package:sasa_bank/src/menus/top_menu/pages/account/account_page.dart';
+import 'package:sasa_bank/src/options/themes.dart';
+import 'package:sasa_bank/src/screens/home_screen/home_screen.dart';
+import 'package:sasa_bank/src/screens/splash_screen/splash_screen.dart';
 
 class GlobalRoute extends StatefulWidget {
   const GlobalRoute({Key? key}) : super(key: key);

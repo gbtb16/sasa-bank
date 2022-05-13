@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:sasa_bank/managements/cards/account/buttons/buttons_object.dart';
-import 'package:sasa_bank/widgets/label_button_widget.dart';
+import 'package:sasa_bank/src/managements/cards/account/buttons/buttons_object.dart';
+import 'package:sasa_bank/src/widgets/label_button_widget.dart';
 
 class ButtonsManager extends StatefulWidget {
   const ButtonsManager({Key? key}) : super(key: key);

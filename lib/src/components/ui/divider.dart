@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:sasa_bank/options/default_options.dart';
+import 'package:sasa_bank/src/options/default_options.dart';
 
 class Divider extends StatelessWidget {
   const Divider({Key? key}) : super(key: key);

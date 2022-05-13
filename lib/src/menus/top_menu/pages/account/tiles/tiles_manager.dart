@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'package:sasa_bank/menus/top_menu/pages/account/tiles/tiles_object.dart';
-import 'package:sasa_bank/options/default_options.dart';
-import 'package:sasa_bank/components/ui/divider.dart' as components;
+import 'package:sasa_bank/src/menus/top_menu/pages/account/tiles/tiles_object.dart';
+import 'package:sasa_bank/src/options/default_options.dart';
+import 'package:sasa_bank/src/components/ui/divider.dart' as components;
 
 class TilesManager extends StatefulWidget {
   const TilesManager({Key? key}) : super(key: key);

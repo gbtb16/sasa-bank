@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:sasa_bank/managements/modals/pix/send_buttons/send_buttons_object.dart';
-import 'package:sasa_bank/options/default_options.dart';
+import 'package:sasa_bank/src/managements/modals/pix/send_buttons/send_buttons_object.dart';
+import 'package:sasa_bank/src/options/default_options.dart';
 
 class SendButtonsManager extends StatefulWidget {
   const SendButtonsManager({Key? key}) : super(key: key);

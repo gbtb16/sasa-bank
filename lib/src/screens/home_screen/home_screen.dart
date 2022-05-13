@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'package:sasa_bank/areas/colored_safe_area.dart';
-import 'package:sasa_bank/screens/home_screen/home_screen_management.dart';
-import 'package:sasa_bank/options/default_options.dart';
+import 'package:sasa_bank/src/areas/colored_safe_area.dart';
+import 'package:sasa_bank/src/screens/home_screen/home_screen_controller.dart';
+import 'package:sasa_bank/src/options/default_options.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({
@@ -49,7 +49,7 @@ class _MyHomeScreenState extends State<HomeScreen> {
             ),
             Column(
               children: const [
-                HomeScreenManagement(),
+                HomeScreenController(),
               ],
             ),
           ],

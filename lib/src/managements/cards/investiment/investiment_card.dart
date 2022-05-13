@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:sasa_bank/components/useful/colored_button.dart';
-import 'package:sasa_bank/widgets/custom_card_widget.dart';
+import 'package:sasa_bank/src/components/useful/colored_button.dart';
+import 'package:sasa_bank/src/widgets/custom_card_widget.dart';
 
 class InvestimentCard extends StatefulWidget {
   const InvestimentCard({Key? key}) : super(key: key);

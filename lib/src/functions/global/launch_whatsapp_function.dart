@@ -1,4 +1,5 @@
-import 'package:sasa_bank/functions/global/random_string_function.dart';
+import 'package:sasa_bank/src/functions/global/random_string_function.dart';
+
 import 'package:url_launcher/url_launcher.dart';
 
 launchWhatsApp() async {

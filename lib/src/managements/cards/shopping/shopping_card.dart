@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:sasa_bank/widgets/custom_card_widget.dart';
+import 'package:sasa_bank/src/widgets/custom_card_widget.dart';
 
 class ShoppingCard extends StatefulWidget {
   const ShoppingCard({Key? key}) : super(key: key);

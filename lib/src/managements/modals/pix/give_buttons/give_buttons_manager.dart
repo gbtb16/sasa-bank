@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sasa_bank/managements/modals/pix/give_buttons/give_buttons_object.dart';
+import 'package:sasa_bank/src/managements/modals/pix/give_buttons/give_buttons_object.dart';
 
-import 'package:sasa_bank/widgets/label_button_widget.dart';
+import 'package:sasa_bank/src/widgets/label_button_widget.dart';
 
 class GiveButtonsManager extends StatefulWidget {
   const GiveButtonsManager({Key? key}) : super(key: key);
